@@ -1,6 +1,4 @@
-all: tinyhttpd
-tinyhttpd: tinyhttpd.c
-	gcc -g -W -Wall -lpthread -o tinyhttpd tinyhttpd.c
-
+BigInt.o:BigInt.h BigInt.cpp SeqList.h utili.h
+	g++ -o BigInt.o -c BigInt.cpp -g
 clean:
-	rm tinyhttpd
+	rm *.o
